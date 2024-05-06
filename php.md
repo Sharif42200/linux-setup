@@ -1,4 +1,4 @@
-# To install PHP on a Linux system, you can follow these general steps.
+# To install ** PHP ** on a Linux system, you can follow these general steps.
 
 ## 1. Update Package Lists:
 ### Before installing any new software, it's good practice to update your package lists to ensure you're getting the latest versions.
