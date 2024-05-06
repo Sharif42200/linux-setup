@@ -1,24 +1,24 @@
-# Install MariaDB 
+# Install process of MariaDB
 
-1. Ensure system packages are up-to-date before installation.
-
-```
-** sudo apt update && sudo apt upgrade **
-```
-2. Install Apache
+## 1. Ensure system packages are up-to-date before installation.
 
 ```
-** sudo apt install apache2 **
+sudo apt update && sudo apt upgrade
+```
+## 2. Install Apache
 
 ```
-3. Start and Enable the Apache Service
+sudo apt install apache2 
 
 ```
-** sudo systemctl start apache2  **
-** sudo systemctl enable apache2gi **
+## 3. Start and Enable the Apache Service
+
+```
+sudo systemctl start apache2  
+sudo systemctl enable apache2
 
 ```
 
-4. Verify Installation
+## 4. Verify Installation
 
 Open a web browser and navigate to http://localhost
