@@ -3,7 +3,7 @@
 ## 1. Update Package Lists:
 ### Before installing any new software, it's good practice to update your package lists to ensure you're getting the latest versions.
 ```
-sudo apt update  # For Debian/Ubuntu
+sudo apt update  
 ```
 
 ## 2. Install PHP:
