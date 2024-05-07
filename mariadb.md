@@ -42,6 +42,10 @@ To exit the monitor and return to the terminal, run:
 ```
 exit;
 ```
+or
+```
+q
+```
 
 ### optional :: to enter in the new user:
 ```
