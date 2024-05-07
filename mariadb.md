@@ -6,3 +6,44 @@ Update the system package list to ensure you get the latest version available in
 ```
 sudo apt update
 ```
+## Step 2: Install MariaDB
+Install the MariaDB package by running the following command:
+```
+sudo apt install mariadb-server -y
+```
+
+The **-y** flag automatically answers **yes** to any prompts during the installation. You can remove the flag if you want to review the prompts.
+
+After installation, the MariaDB service starts automatically.
+
+## Step 3: Verify Installation
+Verify that the database service is active and running. Run the following command:
+```
+sudo systemctl status mariadb
+```
+
+# How To Create a New User and Grant Permissions in MySQL:
+### 1. Run mysql command as root:
+```
+sudo mysql -u root -p
+```
+### 2. Create a new user with root privileges and password-based authentication. Use the syntax below:
+```
+CREATE USER 'example-user'@'localhost' IDENTIFIED BY 'password';
+```
+```
+GRANT ALL PRIVILEGES ON *.* TO 'example-user'@'localhost';
+```
+### 3. Flush the privileges to ensure they are saved:
+```
+FLUSH PRIVILEGES;
+```
+To exit the monitor and return to the terminal, run:
+```
+exit;
+```
+
+### optional :: to enter in the new user:
+```
+sudo mysql -u example-user -p
+```
