@@ -73,6 +73,6 @@ use name;
 ```
 **Here name should be name of the valid database**
 
-### 3. Import:
+### 4. Import:
 ```
 source path/of/sql/file.sql;
