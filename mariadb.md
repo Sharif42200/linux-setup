@@ -44,7 +44,7 @@ exit;
 ```
 or
 ```
-q
+\q
 ```
 
 ### optional :: to enter in the new user you just created:
