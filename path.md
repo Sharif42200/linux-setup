@@ -11,3 +11,9 @@ sudo nano  ~/.bashrc
 ```
 sudo subl  ~/.bashrc
 ```
+
+#### The path will be like this:
+```
+export PATH="$PATH:/home/pc-04/.config/composer/vendor/bin";
+```
+in sublime editor.
