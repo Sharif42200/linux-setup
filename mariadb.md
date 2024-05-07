@@ -51,3 +51,28 @@ or
 ```
 sudo mysql -u example-user -p
 ```
+
+
+# How To Import a Database:
+
+### 1. Login to MariaDB:
+```
+sudo mysql -u root -p
+```
+
+### 2. Create a Database:
+```
+CREATE DATABASE name;
+```
+**Here name should be name of the valid database**
+**Step 2 can be skiped if datbase is already created**
+
+### 3. Use the Database:
+```
+use name;
+```
+**Here name should be name of the valid database**
+
+### 3. Import:
+```
+source path/of/sql/file.sql;
