@@ -47,7 +47,7 @@ or
 q
 ```
 
-### optional :: to enter in the new user:
+### optional :: to enter in the new user you just created:
 ```
 sudo mysql -u example-user -p
 ```
