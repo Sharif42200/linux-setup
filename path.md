@@ -12,7 +12,7 @@ sudo nano  ~/.bashrc
 sudo subl  ~/.bashrc
 ```
 
-#### The path will be like this:
+#### The path will be look like this:
 ```
 export PATH="$PATH:/home/pc-04/.config/composer/vendor/bin";
 ```
