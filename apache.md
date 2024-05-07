@@ -15,6 +15,10 @@ sudo apt install apache2
 
 ```
 sudo systemctl start apache2  
+
+```
+when the computer will open, the apache will **start automatically**.
+```
 sudo systemctl enable apache2
 ```
 
