@@ -47,7 +47,9 @@ Restart=on-failure
 WantedBy=multi-user.target
 ```
 
-Here, /usr/bin/x11vnc -forever -display :0 -auth guess -passwd **password** needs to be replaced with the actual password.
+Here, **password** needs to be replaced with the actual password on file **x11vnc.service**.
+
+> ExecStart=/usr/bin/x11vnc -forever -display :0 -auth guess -passwd **password**
 
 Then restart all the the services using the following commands.
 
