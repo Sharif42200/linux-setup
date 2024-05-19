@@ -30,6 +30,8 @@ OR
 sudo subl /lib/systemd/system/x11vnc.service
 ```
 
+Copy Paste the following configuration on **x11vnc.service** file.
+
 ```
 [Unit]
 Description=x11vnc service
