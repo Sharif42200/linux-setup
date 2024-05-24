@@ -11,7 +11,7 @@ Once all the packages are installed, add this PPA using the following command:
 sudo add-apt-repository ppa:ondrej/php
 ```
 ```
-apt-get update
+sudo apt-get update
 ```
 
 ## 2. Install PHP:
