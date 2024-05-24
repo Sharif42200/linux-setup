@@ -14,6 +14,6 @@ sudo subl  ~/.bashrc
 
 #### The path will be look like this:
 ```
-export PATH="$PATH:/home/pc-04/.config/composer/vendor/bin";
+export PATH="$PATH:$HOME/.config/composer/vendor/bin";
 ```
 in sublime editor.
