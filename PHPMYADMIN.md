@@ -9,7 +9,7 @@ sudo apt update
 ## Step 2: Install phpMyAdmin and Apache dependencies with this command:
 
 ```
-sudo apt install phpmyadmin apache2-mbencoding php-mbstring php-gettext
+sudo apt install phpmyadmin
 ```
 Depending on current php version **mbstring**,**curl** and **zip** needs to be installed:
 ```
@@ -33,7 +33,7 @@ sudo cp /etc/phpmyadmin/apache.conf /etc/apache2/sites-available/phpmyadmin.conf
 For of all create a file named **phpinfo.php** in **/var/www/html**
 
 ```
-sudo cd /var/www/html
+cd /var/www/html
 ```
 
 ```
