@@ -28,6 +28,20 @@ which is located at **/etc/phpmyadmin/apache.conf**
 ```
 sudo cp /etc/phpmyadmin/apache.conf /etc/apache2/sites-available/phpmyadmin.conf
 ```
+
+Then enable the **phpmyadmin** using the following commands:
+
+```
+sudo a2ensite phpmyadmin
+```
+
+```
+sudo   systemctl reload apache2
+```
+
+```
+sudo cp /etc/phpmyadmin/apache.conf /etc/apache2/sites-available/phpmyadmin.conf
+```
 ## Step 3: Check the current version of PHP:
 
 For of all create a file named **phpinfo.php** in **/var/www/html**
