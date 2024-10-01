@@ -27,15 +27,15 @@ sudo apt-get install php8.3
 
 ## 3. If you need additional modules, you can specify them, such as:
 ```
-sudo apt install php8.1-{mysql,gd,mbstring,xml,zip,fileinfo}
+sudo apt install php8.1-{mysql,gd,mbstring,xml,zip,fileinfo,mbstring}
 ```
 
 ```
-sudo apt install php8.2-{mysql,gd,mbstring,xml,zip,fileinfo}
+sudo apt install php8.2-{mysql,gd,mbstring,xml,zip,fileinfo,mbstring}
 ```
 
 ```
-sudo apt install php8.3-{mysql,gd,mbstring,xml,zip,fileinfo}
+sudo apt install php8.3-{mysql,gd,mbstring,xml,zip,fileinfo,mbstring}
 ```
 
 ## 4. Verify Installation:
@@ -53,7 +53,7 @@ sudo update-alternatives --list php
 ```
 To Change the **PHP** version following command can be used(**This will change the local PHP version not for apache**):
 ```
-sudo update-alternatives --connfig php
+sudo update-alternatives --config php
 ```
 To Change the version for **apache2** first currently active version needs to be disabled:
 
