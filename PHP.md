@@ -69,7 +69,7 @@ sudo a2dismod php8.1
 
 Then desired **PHP** version needs to be enabled:
 ```
-sudo a2enmod phpp8.3
+sudo a2enmod php8.3
 ```
  After that **apache2** needs to be restarted:
  ```
