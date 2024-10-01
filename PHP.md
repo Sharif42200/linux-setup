@@ -24,6 +24,9 @@ sudo apt-get install php8.2
 ```
 sudo apt-get install php8.3
 ```
+```
+sudo apt-get install php8.4
+```
 
 ## 3. If you need additional modules, you can specify them, such as:
 ```
@@ -36,6 +39,9 @@ sudo apt install php8.2-{mysql,gd,mbstring,xml,zip,fileinfo,mbstring}
 
 ```
 sudo apt install php8.3-{mysql,gd,mbstring,xml,zip,fileinfo,mbstring}
+```
+```
+sudo apt install php8.4-{mysql,gd,mbstring,xml,zip,fileinfo,mbstring}
 ```
 
 ## 4. Verify Installation:
