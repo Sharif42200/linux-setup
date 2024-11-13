@@ -86,3 +86,14 @@ sudo nano /etc/mysql/my.cnf
 ```
 [mysqld]
 sql_mode=
+
+
+After that restart the database
+
+```
+sudo systemctl restart mysql
+```
+
+```
+sudo systemctl restart mariadb
+```
