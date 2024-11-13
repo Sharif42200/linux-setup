@@ -82,7 +82,7 @@ source path/of/sql/file.sql;
 ```
 sudo nano /etc/mysql/my.cnf
 ```
-### 8. append:
+### 6. append:
 ```
 [mysqld]
 sql_mode=
