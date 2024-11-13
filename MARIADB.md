@@ -76,3 +76,13 @@ use name;
 ### 4. Import:
 ```
 source path/of/sql/file.sql;
+```
+
+### 5. Disable Strict mode:
+```
+sudo nano /etc/mysql/my.cnf
+```
+### 8. append:
+```
+[mysqld]
+sql_mode=
