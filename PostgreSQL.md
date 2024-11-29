@@ -51,5 +51,5 @@ pg_dump -h postgrestest02.c9og5810afad.us-east-1.rds.amazonaws.com -U postgres -
     * -U postgres: Username for the database connection.
     * -p 5438: Port number for the PostgreSQL server.
     * -d test_msx1080: Specify the database to export.
-    * >: Redirect output to the specified file.
+    * . >: Redirect output to the specified file.
 
