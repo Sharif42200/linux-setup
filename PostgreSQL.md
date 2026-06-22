@@ -51,5 +51,27 @@ pg_dump -h postgrestest02.c9og5810afad.us-east-1.rds.amazonaws.com -U postgres -
     * -U postgres: Username for the database connection.
     * -p 5438: Port number for the PostgreSQL server.
     * -d test_msx1080: Specify the database to export.
-    * . >: Redirect output to the specified file.
+    * . >: Redirect output to the specified file
+      
+## 6. Create a User and grant All Previleages
+
+To create a database user you need the following commands
+
+```
+CREATE USER test_msx1080 WITH PASSWORD '123456';
+```
+After That, newly created user needs permissions
+
+First Connect with database
+```
+GRANT CONNECT ON DATABASE test_msx1080 TO test_msx1080;
+```
+
+And then give permissions
+
+```
+GRANT ALL PRIVILEGES ON DATABASE test_msx1080 TO test_msx1080;
+```
+
+
 
