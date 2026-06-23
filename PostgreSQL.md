@@ -60,17 +60,24 @@ To create a database user you need the following commands
 ```
 CREATE USER test_msx1080 WITH PASSWORD '123456';
 ```
-After That, newly created user needs permissions
-
-First Connect with database
-```
-GRANT CONNECT ON DATABASE test_msx1080 TO test_msx1080;
-```
-
-And then give permissions
+After That, newly created user needs permissions of that particular database for that first connect to that database 
 
 ```
-GRANT ALL PRIVILEGES ON DATABASE test_msx1080 TO test_msx1080;
+  sudo -u postgres psql -d test_msx1080
+```
+
+After Connectiing to the database give appropreate permissions 
+
+```
+  GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO test_msx1080;
+```
+
+```
+  GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO test_msx1080;
+```
+
+```
+  ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL ON TABLES TO test_msx1080;
 ```
 
 
