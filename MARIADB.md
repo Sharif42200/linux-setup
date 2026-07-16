@@ -31,7 +31,7 @@ sudo mysql -u root -p
 ```
 ```
 ### A. Create a local-only user
-Connects only from the same machine.
+* Connects only from the same machine.
 ```
 CREATE USER 'example-user'@'localhost' IDENTIFIED BY 'password';
 ```
@@ -40,15 +40,14 @@ GRANT ALL PRIVILEGES ON *.* TO 'example-user'@'localhost';
 ```
 
 ### B. Create a user for external (remote) connections
-The % is a wildcard host — it lets the user connect from any IP address.
+* The % is a wildcard host — it lets the user connect from any IP address.
 ```
 CREATE USER 'example-user'@'%' IDENTIFIED BY 'password';
 ```
 ```
 GRANT ALL PRIVILEGES ON *.* TO 'example-user'@'%';
 ```
-'user'@'localhost' and 'user'@'%' are two separate accounts in MySQL, even with the same name. If you need both local and remote access, create both.
-```
+* 'user'@'localhost' and 'user'@'%' are two separate accounts in MySQL, even with the same name. If you need both local and remote access, create both.
 
 ### 3. Flush the privileges to ensure they are saved:
 ```
