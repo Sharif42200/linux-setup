@@ -28,9 +28,8 @@ sudo systemctl status mariadb
 sudo mysql -u root -p
 ```
 ### 2. Create a new user with root privileges and password-based authentication. Use the syntax below:
-```
-```
-### A. Create a local-only user
+
+#### A. Create a local-only user
 * Connects only from the same machine.
 ```
 CREATE USER 'example-user'@'localhost' IDENTIFIED BY 'password';
@@ -39,7 +38,7 @@ CREATE USER 'example-user'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON *.* TO 'example-user'@'localhost';
 ```
 
-### B. Create a user for external (remote) connections
+#### B. Create a user for external (remote) connections
 * The % is a wildcard host — it lets the user connect from any IP address.
 ```
 CREATE USER 'example-user'@'%' IDENTIFIED BY 'password';
