@@ -71,10 +71,16 @@ After that connect with any **VNC** client with ip address and port number and p
 ```
 sudo systemctl status x11vnc.service
 ```
-
 ## Restrict VNC Access by IP Address
 
-### Enable IP Restriction
+### 1. Install Persistent Firewall Rules
+
+```bash
+sudo apt update
+sudo apt install iptables-persistent
+```
+
+### 2. Enable IP Restriction
 
 Allow only specific IP addresses to connect to VNC.
 
@@ -84,15 +90,13 @@ sudo iptables -I INPUT 2 -p tcp --dport 5900 -j DROP
 sudo netfilter-persistent save
 ```
 
-Replace `192.168.0.100` with the IP address you want to allow. Add another `ACCEPT` rule for each additional allowed IP, placing it before the `DROP` rule.
+Replace `192.168.0.100` with the IP address you want to allow. Add an `ACCEPT` rule for each additional allowed IP before the `DROP` rule.
 
-### Disable IP Restriction
+### 3. Disable IP Restriction
 
 ```bash
 sudo iptables -D INPUT -p tcp --dport 5900 -j DROP
 sudo netfilter-persistent save
 ```
 
-**Note:** These commands apply to TCP port `5900`. Other firewall rules may still affect VNC access.
-
-
+**Note:** These rules apply to TCP port `5900`. Other firewall rules may still affect VNC access.
